@@ -9,6 +9,6 @@ const obj={
     }
 }
 
-obj.fn(); //op- obj        this fxn is called by obj.fn
+obj.fn(); //op- obj         this fxnc is called by obj.fn
 obj.fn2();//op- window
 //whenever you see this it depends how u are calling that fxn
