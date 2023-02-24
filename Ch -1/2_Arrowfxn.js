@@ -10,6 +10,6 @@ function x(){
 
 x();   //this and below are same
 x.call(this);  //window
-x.call(person);//aman
+x.call(person1);//aman
 x.call(person2);//sam
 
