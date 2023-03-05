@@ -52,7 +52,12 @@ const heading = (                               //put a parenthesis to put in mu
 const HeaderComponent=()=>{
     return <h1>Hello Functional component</h1>;
 }
-
+ //if in 1 line skip parenthesis ,if in multiple wrap jsx code   
+const HeaderComponent2=()=>{
+    return (
+    <h1>Hello Functional component</h1>
+    );
+}
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
