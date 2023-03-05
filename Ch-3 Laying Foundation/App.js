@@ -42,22 +42,34 @@ const heading = ce(
 
 // create header element using JSX
 
-const heading = (                               //put a parenthesis to put in multiple lines
-  <h1 id="title" key="h2">
-    This is JSX
-  </h1>
+const heading = //put a parenthesis to put in multiple lines
+  (
+    <h1 id="title" key="h2">
+      This is JSX
+    </h1>
+  );
+
+const HeaderComponent = () => {
+  return <h1>Hello Functional component</h1>;
+};
+
+//if in 1 line skip parenthesis ,if in multiple wrap jsx code inside brackets
+const HeaderComponent2 = () => {
+  return (
+    <div>
+      <h1>Hello Functional component</h1>
+      <h2>hehe</h2>
+    </div>
+  );
+};
+
+// not writing return ,and the mostly used way
+const HeaderComponent3 = () => (
+  <div>
+    <h1>Hello Functional component</h1>
+    <h2>hehe</h2>
+  </div>
 );
 
-
-const HeaderComponent=()=>{
-    return <h1>Hello Functional component</h1>;
-}
- //if in 1 line skip parenthesis ,if in multiple wrap jsx code   
-const HeaderComponent2=()=>{
-    return (
-    <h1>Hello Functional component</h1>
-    );
-}
-
-const root=ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
