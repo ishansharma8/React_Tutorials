@@ -49,9 +49,6 @@ const heading = //put a parenthesis to put in multiple lines
     </h1>
   );
 
-const HeaderComponent = () => {
-  return <h1>Hello Functional component</h1>;
-};
 
 //if in 1 line skip parenthesis ,if in multiple wrap jsx code inside brackets
 const HeaderComponent2 = () => {
@@ -63,13 +60,7 @@ const HeaderComponent2 = () => {
   );
 };
 
-// not writing return ,and the mostly used way
-const HeaderComponent3 = () => (
-  <div>
-    <h1>Hello Functional component</h1>
-    <h2>hehe</h2>
-  </div>
-);
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<HeaderComponent2/>);
