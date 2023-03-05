@@ -48,5 +48,11 @@ const heading = (                               //put a parenthesis to put in mu
   </h1>
 );
 
+
+const HeaderComponent=()=>{
+    return <h1>Hello Functional component</h1>;
+}
+
+
 const root=ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
